@@ -4,13 +4,13 @@
 
 <strong>Automate the setup of multiple Ubuntu 22.04 containers using Docker and Ansible</strong>
 
-<br><br>
-
+<br>
 <a href="#-prerequisites">Prerequisites</a> •
 <a href="#-quick-start">Quick Start</a> •
 <a href="#-project-structure">Project Structure</a> •
 <a href="#-usage">Usage</a> •
 <a href="#-contributing">Contributing</a>
+<br>
 
 </div>
 
@@ -116,11 +116,11 @@ docker ps -a
 
 Expected output:
 
-`
+```
 CONTAINER ID   IMAGE            COMMAND            STATUS         NAMES
 xxxxxxxxxxxx   docker-ubuntu1   "sleep infinity"   Up X minutes   ansible_lab_1
 yyyyyyyyyyyy   docker-ubuntu2   "sleep infinity"   Up X minutes   ansible_lab_2
-`
+```
 
 #### 3️⃣ Check Python version inside containers
 
