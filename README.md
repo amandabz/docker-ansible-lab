@@ -61,6 +61,7 @@ ansible --version
 ```
 
 ### 📁 Project Structure
+
 `
 docker-ansible-lab/
 │
@@ -114,6 +115,7 @@ docker ps -a
 ```
 
 Expected output:
+
 `
 CONTAINER ID   IMAGE            COMMAND            STATUS         NAMES
 xxxxxxxxxxxx   docker-ubuntu1   "sleep infinity"   Up X minutes   ansible_lab_1
@@ -134,7 +136,9 @@ ansible-playbook -i inventory.ini playbook.yml
 ```
 
 This will:
+<br>
 • ✅ Install **curl** in both containers
+<br>
 • ✅ Install **PostgreSQL** and its dependencies
 
 #### 5️⃣ Access containers interactively
