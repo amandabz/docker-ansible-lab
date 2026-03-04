@@ -50,13 +50,13 @@ Before you begin, ensure you have the following installed:
 ### 💡 Quick Check
 
 ```bash
-# Verificar versión de Docker
+# Verify Docker version
 docker --version
 
-# Verificar versión de Docker Compose
+# Verify Docker Compose version
 docker-compose --version
 
-# Verificar versión de Ansible
+# Verify Ansible version
 ansible --version
 ```
 
