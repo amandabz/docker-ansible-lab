@@ -23,7 +23,7 @@
 - [Usage](#-usage)
 - [Configuration](#-configuration)
 - [Troubleshooting](#-troubleshooting)
-- [References](#-references)
+- [Logs](#-logs)
 
 ## 🎯 About
 
