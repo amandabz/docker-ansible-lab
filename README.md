@@ -24,14 +24,12 @@
 - [Configuration](#-configuration)
 - [Troubleshooting](#-troubleshooting)
 - [Logs](#-logs)
-
-<br>
+<hr style="border:0.05px solid gray">
 
 ## 🎯 About
 
 This project demonstrates how to **automate the setup of multiple Ubuntu 22.04 containers** using **Docker** and **Ansible**. The containers come pre-configured with **Python 3**, enabling Ansible to manage them seamlessly and install additional software like curl and PostgreSQL.
-
-<br>
+<hr style="border:0.05px solid gray">
 
 ### ✨ Features
 
@@ -41,7 +39,7 @@ This project demonstrates how to **automate the setup of multiple Ubuntu 22.04 c
 - 🤖 **Ansible automation** for configuration management
 - 🐘 **PostgreSQL** and **curl** automated installation
 - 🔄 **Scalable architecture** - easily add more containers
-<hr style="border:0.2px solid gray">
+<hr style="border:0.05px solid gray">
 
 ## 🔧 Prerequisites
 Before you begin, ensure you have the following installed:
@@ -51,7 +49,7 @@ Before you begin, ensure you have the following installed:
 | **Docker** | 20.10+ | [Get Docker](https://www.docker.com/get-started) |
 | **Docker Compose** | 2.0+ | [Install Docker Compose](https://docs.docker.com/compose/install/) |
 | **Ansible** | 2.9+ | [Install Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) |
-<hr style="border:0.2px solid gray">
+<hr style="border:0.05px solid gray">
 
 ### 💡 Quick Check
 
@@ -65,7 +63,7 @@ docker-compose --version
 # Verify Ansible version
 ansible --version
 ```
-<hr style="border:0.2px solid gray">
+<hr style="border:0.05px solid gray">
 
 ### 📁 Project Structure
 
@@ -81,7 +79,7 @@ docker-ansible-lab/
     ├── Dockerfile                  # Base image with Ubuntu 22.04 and Python 3
     └── docker-compose.yml          # Defines and runs multiple containers
 ```
-<hr style="border:0.2px solid gray">
+<hr style="border:0.05px solid gray">
 
 ### 🚀 Quick Start
 
@@ -107,7 +105,7 @@ docker exec -it ansible_lab_1 psql --version
 docker exec -it ansible_lab_2 curl --version
 docker exec -it ansible_lab_2 psql --version
 ```
-<hr style="border:0.2px solid gray">
+<hr style="border:0.05px solid gray">
 
 ### 📖 Usage
 #### 1️⃣ Build the Docker image and start the containers
@@ -176,7 +174,7 @@ docker-compose down -v
 ```bash
 docker-compose stop
 ```
-<hr style="border:0.2px solid gray">
+<hr style="border:0.05px solid gray">
 
 ### ⚙️ Configuration
 #### 🐳 Dockerfile Configuration
@@ -220,7 +218,7 @@ The **inventory.ini** file defines container hosts:
 ansible_lab_1 ansible_connection=docker
 ansible_lab_2 ansible_connection=docker
 ```
-<hr style="border:0.2px solid gray">
+<hr style="border:0.05px solid gray">
 
 ### 🐛 Troubleshooting
 
@@ -232,7 +230,7 @@ Common Issues and Solutions
 | Ansible connection failed | Ensure containers are running: ```bash docker ps -a``` |
 | Python not found | Rebuild image: ```bash docker-compose build --no-cache``` |
 | Permission denied | Run with sudo or add user to docker group |
-<hr style="border:0.2px solid gray">
+<hr style="border:0.05px solid gray">
 
 #### 📝 Logs
 
@@ -243,7 +241,7 @@ docker logs ansible_lab_1
 # View Ansible verbose output
 ansible-playbook -i inventory.ini playbook.yml -vvv
 ```
-<hr style="border:0.2px solid gray">
+<hr style="border:0.05px solid gray">
 <br>
 
 <div align="center">
