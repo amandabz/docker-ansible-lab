@@ -13,10 +13,3 @@
       apt:
         name: postgresql
         state: present
-
-
-# install python3 (ansible needs python to work) in the docker container:
-# apt update && apt install -y python3 openssh-server sudo
-
-# command to execute the playbook:
-# ansible-playbook -i inventory.ini playbook.yml
