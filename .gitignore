@@ -1,0 +1,20 @@
+# --- Ansible ---
+*.retry
+roles/
+.galaxy/
+.cache/
+*.pyc
+
+# --- Secrets ---
+# Ignore vault files if they contain real passwords
+*.vault
+*.key
+
+# Ignore dynamic inventories orlocalhost files
+/inventory/local
+/group_vars/all/secrets.yml
+
+# --- IDEs/Systems ---
+.vscode/
+.idea/
+.DS_Store
