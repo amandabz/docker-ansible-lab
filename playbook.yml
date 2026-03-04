@@ -1,0 +1,22 @@
+- name: Installing some applications in Ubuntu
+  hosts: docker_containers  # this is defined in inventory.ini file
+  become: yes  # that is used to execute the tasks with root permissions
+
+  tasks:
+    - name: Install curl
+      apt:
+        name: curl
+        state: present
+        update_cache: yes
+
+    - name: Install PostgreSQL
+      apt:
+        name: postgresql
+        state: present
+
+
+# install python3 (ansible needs python to work) in the docker container:
+# apt update && apt install -y python3 openssh-server sudo
+
+# command to execute the playbook:
+# ansible-playbook -i inventory.ini playbook.yml
