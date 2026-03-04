@@ -30,12 +30,14 @@
 This project demonstrates how to **automate the setup of multiple Ubuntu 22.04 containers** using **Docker** and **Ansible**. The containers come pre-configured with **Python 3**, enabling Ansible to manage them seamlessly and install additional software like curl and PostgreSQL.
 
 ### ✨ Features
+
 - 🐧 **Ubuntu 22.04 LTS** base image
 - 🐍 **Python 3 pre-installed** for Ansible compatibility
 - 📦 **Docker Compose** for multi-container orchestration
 - 🤖 **Ansible automation** for configuration management
 - 🐘 **PostgreSQL** and **curl** automated installation
 - 🔄 **Scalable architecture** - easily add more containers
+
 
 ## 🔧 Prerequisites
 
@@ -46,6 +48,7 @@ Before you begin, ensure you have the following installed:
 | **Docker** | 20.10+ | [Get Docker](https://www.docker.com/get-started) |
 | **Docker Compose** | 2.0+ | [Install Docker Compose](https://docs.docker.com/compose/install/) |
 | **Ansible** | 2.9+ | [Install Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) |
+
 
 ### 💡 Quick Check
 
@@ -59,6 +62,7 @@ docker-compose --version
 # Verify Ansible version
 ansible --version
 ```
+
 
 ### 📁 Project Structure
 
@@ -74,6 +78,7 @@ docker-ansible-lab/
     ├── Dockerfile                  # Base image with Ubuntu 22.04 and Python 3
     └── docker-compose.yml          # Defines and runs multiple containers
 ```
+
 
 ### 🚀 Quick Start
 
@@ -100,6 +105,7 @@ docker exec -it ansible_lab_2 curl --version
 docker exec -it ansible_lab_2 psql --version
 ```
 
+
 ### 📖 Usage
 #### 1️⃣ Build the Docker image and start the containers
 
@@ -122,12 +128,14 @@ xxxxxxxxxxxx   docker-ubuntu1   "sleep infinity"   Up X minutes   ansible_lab_1
 yyyyyyyyyyyy   docker-ubuntu2   "sleep infinity"   Up X minutes   ansible_lab_2
 ```
 
+
 #### 3️⃣ Check Python version inside containers
 
 ```bash
 docker exec -it ansible_lab_1 python3 --version
 docker exec -it ansible_lab_2 python3 --version
 ```
+
 
 #### 4️⃣ Run Ansible playbook
 
@@ -141,6 +149,7 @@ This will:
 <br>
 • ✅ Install **PostgreSQL** and its dependencies
 
+
 #### 5️⃣ Access containers interactively
 
 ```bash
@@ -150,6 +159,7 @@ docker exec -it ansible_lab_1 /bin/bash
 # Access second container
 docker exec -it ansible_lab_2 /bin/bash
 ```
+
 
 #### 6️⃣ Delete containers
 
@@ -166,6 +176,7 @@ docker-compose down -v
 ```bash
 docker-compose stop
 ```
+
 
 ### ⚙️ Configuration
 #### 🐳 Dockerfile Configuration
@@ -210,6 +221,7 @@ ansible_lab_1 ansible_connection=docker
 ansible_lab_2 ansible_connection=docker
 ```
 
+
 ### 🐛 Troubleshooting
 
 Common Issues and Solutions
@@ -221,6 +233,7 @@ Common Issues and Solutions
 | Python not found | Rebuild image: ```bash docker-compose build --no-cache``` |
 | Permission denied | Run with sudo or add user to docker group |
 
+
 #### 📝 Logs
 
 ```bash
@@ -230,6 +243,7 @@ docker logs ansible_lab_1
 # View Ansible verbose output
 ansible-playbook -i inventory.ini playbook.yml -vvv
 ```
+
 
 <div align="center">
 
