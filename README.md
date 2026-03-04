@@ -24,7 +24,6 @@
 - [Configuration](#-configuration)
 - [Troubleshooting](#-troubleshooting)
 - [Logs](#-logs)
-<hr style="border:0.05px solid gray">
 
 ## 🎯 About
 
