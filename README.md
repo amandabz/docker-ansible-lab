@@ -62,18 +62,18 @@ ansible --version
 
 ### 📁 Project Structure
 
-`
+```
 docker-ansible-lab/
 │
-├── 📄 inventory.ini           # Ansible inventory for the containers
-├── 📄 playbook.yml            # Ansible playbook to install curl & PostgreSQL
-├── 📄 README.md               # Project documentation
-├── 📄 .gitignore              # Files and folders to ignore in Git
+├── inventory.ini           # Ansible inventory for the containers
+├── playbook.yml            # Ansible playbook to install curl & PostgreSQL
+├── README.md               # Project documentation
+├── .gitignore              # Files and folders to ignore in Git
 │
-└── 📂 docker/                 # Docker folder
-    ├── 📄 Dockerfile                  # Base image with Ubuntu 22.04 and Python 3
-    └── 📄 docker-compose.yml          # Defines and runs multiple containers
-`
+└── docker/                 # Docker folder
+    ├── Dockerfile                  # Base image with Ubuntu 22.04 and Python 3
+    └── docker-compose.yml          # Defines and runs multiple containers
+```
 
 ### 🚀 Quick Start
 
