@@ -151,7 +151,7 @@ docker exec -it ansible_lab_1 /bin/bash
 docker exec -it ansible_lab_2 /bin/bash
 ```
 
-#### 6️⃣ Stop containers
+#### 6️⃣ Delete containers
 
 ```bash
 docker-compose down
@@ -160,6 +160,11 @@ docker-compose down
 Add *-v flag* to also remove volumes:
 ```bash
 docker-compose down -v
+```
+
+#### Or maybe you prefer to stop the containers...
+```bash
+docker-compose stop
 ```
 
 ### ⚙️ Configuration
