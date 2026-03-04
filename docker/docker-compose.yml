@@ -1,0 +1,8 @@
+services:
+  ubuntu1:
+    build: .
+    container_name: ansible_lab_1
+
+  ubuntu2:
+    build: .
+    container_name: ansible_lab_2
