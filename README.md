@@ -4,12 +4,13 @@
 
 <strong>Automate the setup of multiple Ubuntu 22.04 containers using Docker and Ansible</strong>
 
-<br>
 <a href="#-prerequisites">Prerequisites</a> •
 <a href="#-quick-start">Quick Start</a> •
 <a href="#-project-structure">Project Structure</a> •
 <a href="#-usage">Usage</a> •
 <a href="#-contributing">Contributing</a>
+
+<br>
 <br>
 
 </div>
