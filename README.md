@@ -8,7 +8,6 @@
 <a href="#-quick-start">Quick Start</a> •
 <a href="#-project-structure">Project Structure</a> •
 <a href="#-usage">Usage</a> •
-<a href="#-contributing">Contributing</a>
 
 <br>
 <br>
